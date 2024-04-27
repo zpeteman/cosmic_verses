@@ -1,0 +1,12 @@
+<!-- gen_pm.html -->
+{% extends "base.html" %}
+
+{% block title %}
+    الصفحة غير موجودة  
+{% endblock %}
+
+{% block content %}
+    <h1>خطأ 404 - الصفحة غير موجودة</h1>
+    <img src="{{ url_for('static', filename='images/404.png') }}" alt="صورة 404" height="300" width="300">
+    <p>عذراً، الصفحة التي تبحثين عنها غير موجودة.</p>    
+{% endblock %}

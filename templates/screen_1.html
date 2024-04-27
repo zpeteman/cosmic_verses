@@ -1,0 +1,15 @@
+<!-- gen_pm.html -->
+{% extends "base.html" %}
+
+{% block title %}
+    صفحة الاختيار
+{% endblock %}
+
+{% block content %}
+    <h1>مرحبًا بك في موقع الشعر الكوني!</h1>
+    <p>يرجى تحديد نوع الحساب:</p>
+    <dev class="account">
+        <a href="/check_user" id="premium-btn" class="ch_account">مستخدم(ة) مميز(ة)</a>
+        <a href="/free_users" id="free-btn" class="ch_account">زائر(ة)</a> 
+    </dev>
+{% endblock %}

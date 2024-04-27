@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}
+    الصفحة الرئيسية
+{% endblock %}
+
+{% block content %}
+    <h1>أهلاً بك </h1>
+    <form id="poem-form" action="/generate_pm" method="post">
+        <p>أدخل قولتك الفضائية:</p>
+        <div class="input-container">
+            <input type="text" id="cosmic-line" name="cosmic_line" placeholder="أدخل قولتك">
+        </div>
+        <div class="button-container">
+            <button type="button" id="generate-btn" onclick="checkInput()">إنشاء</button>
+        </div>
+    </form>
+
+    <script>
+        function checkInput() {
+            var inputText = document.getElementById("cosmic-line").value;
+            if (inputText.trim() === "") {
+                alert("حدث خطأ ما. يرجى إدخال نص صالح.");
+                return false; // Prevent form submission
+            }
+            // Check if input text contains Arabic characters
+            var arabicRegex = /[\u0600-\u06FF\u0750-\u077F]/;
+            if (!arabicRegex.test(inputText)) {
+                alert("حدث خطأ ما. يرجى إدخال نص باللغة العربية.");
+                return false; // Prevent form submission
+            }
+            // If input is valid, submit the form
+            document.getElementById("poem-form").submit();
+        }
+    </script>
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> <!-- Link to styles.css -->
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}"> <!-- Link to logo.png -->
+</head>
+<body>
+    <div class="outer-container">
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+
+        <div class="footer">
+            
+
+            <!-- Copyright symbol and text -->
+            <p>&copy; 2024 CosmicVerse.</p>
+        </div>
+    </div>
+</body>
+</html>
