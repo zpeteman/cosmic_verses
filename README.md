@@ -42,4 +42,10 @@ now you can chose the type of your account or in this case you will be a visitor
 when u first open the program u will see this page :
 ![Cosmic Inspiration](home.png)
 
+after choosing the kind of subscribtion u have u will be directed to the inserting page :
+![Cosmic Inspiration](inserting.png)
+
+and u can enter whatever u want just make it related to love the folowing poetry is made using the prompt (حُبك دنياي) :
+![Cosmic Inspiration](generating.png)
+
 
